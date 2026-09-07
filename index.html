@@ -4,15 +4,31 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pine Café</title>
-  <meta name="description" content="Pine Café är ett lugnt café med fokus på kaffe, bakverk och en stillsam miljö." />
+  <meta
+    name="description"
+    content="Pine Café är ett lugnt café med fokus på kaffe, bakverk och en stillsam miljö."
+  />
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NJ2HQTZJ');</script>
-<!-- End Google Tag Manager -->
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){
+      w[l]=w[l]||[];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event:'gtm.js'
+      });
+
+      var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),
+          dl=l!='dataLayer'?'&l='+l:'';
+
+      j.async=true;
+      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);
+
+    })(window,document,'script','dataLayer','GTM-NJ2HQTZJ');
+  </script>
+  <!-- End Google Tag Manager -->
 
   <style>
     :root{
@@ -26,7 +42,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       --radius:22px;
     }
 
-    *{box-sizing:border-box}
+    *{
+      box-sizing:border-box;
+    }
 
     body{
       margin:0;
@@ -100,7 +118,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 
     @media (max-width:820px){
-      .content{grid-template-columns:1fr}
+      .content{
+        grid-template-columns:1fr;
+      }
     }
 
     .lead{
@@ -162,7 +182,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       font-size:14px;
     }
 
-    .panel li{ margin:6px 0; }
+    .panel li{
+      margin:6px 0;
+    }
 
     footer{
       margin-top:28px;
@@ -179,17 +201,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       text-decoration:none;
       border-bottom:1px solid rgba(0,0,0,.12);
     }
-    .smalllink:hover{ color:var(--text); }
+
+    .smalllink:hover{
+      color:var(--text);
+    }
   </style>
 </head>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ2HQTZJ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-NJ2HQTZJ"
+      height="0"
+      width="0"
+      style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <main class="page">
     <section class="card">
+
       <header>
         <div class="brand">
           <span class="logo">Pine Café</span>
@@ -199,6 +233,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </header>
 
       <div class="content">
+
         <div>
           <p class="lead">
             Pine Café är ett lugnt café med fokus på kaffe, matcha och nybakat.
@@ -207,8 +242,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </p>
 
           <div class="actions">
-        <a href="#menu" class="button primary" id="menu-button">Meny</a>
-           <a href="#visit" class="button" id="visit-button">Hitta hit</a>
+            <a
+              href="#menu"
+              class="button primary"
+              id="menu-button">
+              Meny
+            </a>
+
+            <a
+              href="#visit"
+              class="button"
+              id="visit-button">
+              Hitta hit
+            </a>
           </div>
         </div>
 
@@ -220,9 +266,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li>Gratis wifi</li>
           </ul>
         </aside>
+
       </div>
 
       <div class="content" style="margin-top:22px;">
+
         <section class="panel" id="menu">
           <h2>Meny (utvalda)</h2>
           <ul>
@@ -240,16 +288,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li>Sön: Stängt</li>
           </ul>
         </section>
+
       </div>
 
       <footer>
         <span>© 2026 Pine Café</span>
+
         <span>
-          <a id="footer-menu-button" class="smalllink" href="/menu">Meny</a>
-          <a id="footer-visit-link" class="smalllink" href="/visit">Hitta Hit</a>
+          <a
+            id="footer-menu-button"
+            class="smalllink"
+            href="#menu">
+            Meny
+          </a>
+
+          <a
+            id="footer-visit-link"
+            class="smalllink"
+            href="#visit">
+            Hitta hit
+          </a>
         </span>
       </footer>
+
     </section>
   </main>
+
 </body>
 </html>
