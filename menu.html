@@ -99,14 +99,23 @@
       color:var(--muted);
     }
 
-    .panel ul{
+    .menu-list{
+      list-style:none;
       margin:0;
-      padding-left:18px;
+      padding:0;
       color:var(--muted);
     }
 
-    .panel li{
-      margin:8px 0;
+    .menu-list li{
+      display:flex;
+      justify-content:space-between;
+      gap:18px;
+      margin:9px 0;
+    }
+
+    .price{
+      white-space:nowrap;
+      color:var(--text);
     }
 
     .back{
@@ -135,44 +144,43 @@
 
         <section class="panel">
           <h2>Kaffe</h2>
-          <ul>
-            <li>Espresso</li>
-            <li>Americano</li>
-            <li>Cappuccino</li>
-            <li>Latte</li>
-            <li>Flat white</li>
+          <ul class="menu-list">
+            <li><span>Espresso</span><span class="price">35 kr</span></li>
+            <li><span>Americano</span><span class="price">39 kr</span></li>
+            <li><span>Cappuccino</span><span class="price">45 kr</span></li>
+            <li><span>Latte</span><span class="price">49 kr</span></li>
+            <li><span>Flat white</span><span class="price">49 kr</span></li>
           </ul>
         </section>
 
         <section class="panel">
           <h2>Matcha & te</h2>
-          <ul>
-            <li>Matcha latte</li>
-            <li>Iced matcha</li>
-            <li>Chai latte</li>
-            <li>Grönt te</li>
-            <li>Earl Grey</li>
+          <ul class="menu-list">
+            <li><span>Matcha latte</span><span class="price">55 kr</span></li>
+            <li><span>Ismatcha</span><span class="price">59 kr</span></li>
+            <li><span>Chai latte</span><span class="price">52 kr</span></li>
+            <li><span>Grönt te</span><span class="price">39 kr</span></li>
+            <li><span>Earl Grey</span><span class="price">39 kr</span></li>
           </ul>
         </section>
 
         <section class="panel">
           <h2>Nybakat</h2>
-          <ul>
-            <li>Kanelbulle</li>
-            <li>Kardemummabulle</li>
-            <li>Brownie</li>
-            <li>Citronkaka</li>
-            <li>Dagens bakverk</li>
+          <ul class="menu-list">
+            <li><span>Kanelbulle</span><span class="price">39 kr</span></li>
+            <li><span>Kardemummabulle</span><span class="price">42 kr</span></li>
+            <li><span>Brownie</span><span class="price">45 kr</span></li>
+            <li><span>Citronkaka</span><span class="price">45 kr</span></li>
+            <li><span>Dagens bakverk</span><span class="price">45 kr</span></li>
           </ul>
         </section>
 
         <section class="panel">
-          <h2>Övrigt</h2>
-          <ul>
-            <li>Havremjölk</li>
-            <li>Laktosfri mjölk</li>
-            <li>Takeaway</li>
-            <li>Gratis wifi</li>
+          <h2>Tillägg</h2>
+          <ul class="menu-list">
+            <li><span>Havremjölk</span><span class="price">+5 kr</span></li>
+            <li><span>Laktosfri mjölk</span><span class="price">+5 kr</span></li>
+            <li><span>Extra espressoshot</span><span class="price">+10 kr</span></li>
           </ul>
         </section>
 
