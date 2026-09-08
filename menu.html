@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meny – Pine Café</title>
+  <meta
+    name="description"
+    content="Se hela menyn hos Pine Café – kaffe, matcha, te och nybakat."
+  />
+
+  <style>
+    :root{
+      --bg:#fbf7f1;
+      --card:#ffffff;
+      --text:#1f2320;
+      --muted:#6b6f6b;
+      --accent:#2f5d3a;
+      --border:rgba(0,0,0,.08);
+      --shadow:0 20px 60px rgba(0,0,0,.08);
+      --radius:22px;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+      background:
+        radial-gradient(900px 500px at 10% 10%, rgba(47,93,58,.10), transparent 60%),
+        radial-gradient(700px 400px at 90% 20%, rgba(47,93,58,.08), transparent 60%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+
+    .page{
+      min-height:100vh;
+      display:grid;
+      place-items:center;
+      padding:24px;
+    }
+
+    .card{
+      width:min(980px,100%);
+      background:rgba(255,255,255,.86);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:34px;
+      backdrop-filter:blur(8px);
+    }
+
+    .logo{
+      text-transform:uppercase;
+      letter-spacing:.22em;
+      font-size:12px;
+      color:var(--muted);
+    }
+
+    h1{
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:clamp(34px,5vw,52px);
+      line-height:1.05;
+      margin:8px 0 10px;
+    }
+
+    .sub{
+      color:var(--muted);
+      margin-bottom:28px;
+    }
+
+    .menu-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:22px;
+    }
+
+    @media (max-width:760px){
+      .menu-grid{
+        grid-template-columns:1fr;
+      }
+    }
+
+    .panel{
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:20px;
+      background:rgba(255,255,255,.70);
+    }
+
+    .panel h2{
+      margin:0 0 12px;
+      font-size:14px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+
+    .panel ul{
+      margin:0;
+      padding-left:18px;
+      color:var(--muted);
+    }
+
+    .panel li{
+      margin:8px 0;
+    }
+
+    .back{
+      display:inline-block;
+      margin-top:28px;
+      text-decoration:none;
+      padding:12px 18px;
+      border-radius:999px;
+      background:var(--accent);
+      color:#fff;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <section class="card">
+
+      <span class="logo">Pine Café</span>
+      <h1>Meny</h1>
+      <p class="sub">
+        Kaffe, matcha, te och nybakat för en lugn stund.
+      </p>
+
+      <div class="menu-grid">
+
+        <section class="panel">
+          <h2>Kaffe</h2>
+          <ul>
+            <li>Espresso</li>
+            <li>Americano</li>
+            <li>Cappuccino</li>
+            <li>Latte</li>
+            <li>Flat white</li>
+          </ul>
+        </section>
+
+        <section class="panel">
+          <h2>Matcha & te</h2>
+          <ul>
+            <li>Matcha latte</li>
+            <li>Iced matcha</li>
+            <li>Chai latte</li>
+            <li>Grönt te</li>
+            <li>Earl Grey</li>
+          </ul>
+        </section>
+
+        <section class="panel">
+          <h2>Nybakat</h2>
+          <ul>
+            <li>Kanelbulle</li>
+            <li>Kardemummabulle</li>
+            <li>Brownie</li>
+            <li>Citronkaka</li>
+            <li>Dagens bakverk</li>
+          </ul>
+        </section>
+
+        <section class="panel">
+          <h2>Övrigt</h2>
+          <ul>
+            <li>Havremjölk</li>
+            <li>Laktosfri mjölk</li>
+            <li>Takeaway</li>
+            <li>Gratis wifi</li>
+          </ul>
+        </section>
+
+      </div>
+
+      <a href="./" class="back">Tillbaka till Pine Café</a>
+
+    </section>
+  </main>
+</body>
+</html>
